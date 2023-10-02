@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pes star website portfolio </title>
+        <meta name="viewport" content="width =device-width,initial-scale=1.0"></meta>
+        <style>
+        	body {
+background-color:#8b0000;
+}
+#logobackground{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100px;
+background-color:#000080;
+}
+#weblogo{
+width:20%;
+height:50px;
+}
+#personal{
+position:fixed;
+top:5px;
+left:60%;
+width:12%;
+height:44px;
+border-radius:50%;
+background-color:white;
+}
+.personalhead{
+position:fixed;
+top:13px;
+left:63%;
+width:4.5%;
+height:17px;
+border:3px solid black;
+border-radius:50%;
+background-color:transparent;
+}
+.personalbody{
+position:fixed;
+top:33px;
+left:62%;
+width:7%;
+height:17px;
+border:3px solid black;
+border-radius:50%;
+border-bottom:3px solid transparent;
+border-left:3px solid transparent;
+border-right:3px solid transparent;
+background-color:transparent;
+}
+#personalfunc{
+position:fixed;
+top:120px;
+left:10%;
+width:80%;
+height:200px;
+border:1px solid green;
+background-color:white;
+display:none;
+}
+.signup{
+position:fixed;
+top:120px;
+left:10%;
+width:80%;
+font-size:20px;
+height:100px;
+}
+.login{
+position:fixed;
+top:220px;
+left:10%;
+width:80%;
+font-size:20px;
+height:100px;
+}
+#line1{
+position:fixed;
+top:15px;
+left:85%;
+width:10%;
+height:5px;
+border-radius:20%;
+background-color:red;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+}
+@keyframes move{
+100%{top:25px; transform:rotate(40deg);}
+}
+#line2{
+position:fixed;
+top:25px;
+left:83%;
+width:12%;
+height:5px;
+border-radius:20%;
+background-color:red;
+}
+#line3{
+position:fixed;
+top:35px;
+left:85%;
+width:10%;
+height:5px;
+border-radius:20%;
+background-color:red;
+animation-iteration-count:1;
+animation-fill-mode:down;
+}
+@keyframes down{
+100%{top:25px; transform:rotate(-40deg);}
+}
+#nav{
+position:fixed;
+top:0;
+left:0;
+width:50%;
+height:100%;
+border-top-right-radius:10%;
+border-bottom-right-radius:10%;
+background-color:white;
+display:none;
+animation-iteration-count:1;
+animation-fill-mode:change;
+}
+@keyframes change{
+50%{width:80%;}
+100%{width:95%;}
+}
+#homeid{
+position:fixed;
+top:200px;
+font-size:30px;
+}
+#aboutid{
+position:fixed;
+top:300px;
+font-size:30px;
+}
+#menuid{
+position:fixed;
+top:400px;
+font-size:30px;
+}
+#descrip{
+position:absolute;
+top:101px;
+left:0px;
+width:100%;
+height:200px;
+background-color:white;
+}
+#imgdescrip{
+position:relative;
+top:0px;
+left:0px;
+width:100%;
+height:278px;
+}
+.description{
+position:absolute;
+top:30px;
+left:20%;
+font-style:italic;
+font-size:30px;
+color:#fffff0;
+text-shadow:0px 10px 10px blue;
+}
+.description1{
+position:absolute;
+top:70px;
+left:35%;
+font-size:40px;
+font-style:italic;
+color:#fffff0;
+text-shadow:0px 10px 10px blue;
+}
+#mydescription{
+position:absolute;
+top:380px;
+left:0;
+width:98%;
+height:200px;
+border:3px solid red;
+background-color:white;
+}
+#mydescription h5{
+text-align:center;
+position:relative;
+top:40px;
+color:blue;
+}
+#myskillbutton{
+position:absolute;
+top:600px;
+left:4%;
+width:92%;
+height:50px;
+border:3px solid black;
+background-color:#90EE90;
+}
+#myskillbutton h5{
+text-align:center;
+position:relative;
+top:-15px;
+font-size:20px;
+color:navy;
+}
+#myskilllogo{
+position:absolute;
+top:25px;
+left:80%;
+height:0;
+width:0;
+border-right:6px solid transparent;
+border-left:6px solid transparent;
+border-bottom:12px solid grey;
+transform:rotate(180deg);
+}
+#glare{
+position:absolute;
+top:10px;
+left:10%;
+width:20%;
+height:20px;
+border-radius:50%;
+background-color:#fffff0;
+opacity:1;
+filter:blur(0.5px);
+}
+#myskill{
+position:absolute;
+top:660px;
+left:0;
+width:100%;
+height:300px;
+background-color:white;
+display:none;
+}
+#myskilld{
+text-align:center;
+position:relative;
+top:5px;
+}
+#htmlcoded{
+position:absolute;
+top:40px;
+left:0%;
+color:grey;
+animation:htmlcoded 1s forwards;
+animation-iteration-count:1;
+animation-delay:1s;
+}
+@keyframes htmlcoded{
+0%{left:3%;}
+50%{left:7%;}
+100%{left:10%;}
+}
+#htmlcode{
+position:absolute;
+top:90px;
+left:5%;
+width:0%;
+height:20px;
+border:2px solid black;
+background-color:transparent;
+animation:htmlcode 1s forwards;
+animation-iteration-count:1;
+animation-delay:2s;
+}
+@keyframes htmlcode{
+0%{width:30%;}
+50%{width:50%;}
+100%{width:88%;}
+}
+#htmlcodeload{
+position:absolute;
+top:0;
+left:0;
+width:0%;
+height:20px;
+background-color:grey;
+animation:htmlload 1s forwards;
+animation-iteration-count:1;
+animation-delay:5s;
+}
+@keyframes htmlload{
+0%{width:0%;}
+10%{width:10%;}
+20%{width:20%;}
+30%{width:30%;}
+40%{width:40%;}
+50%{width:50%;}
+60%{width:60%;}
+70%{width:70%;}
+80%{width:80%;}
+90%{width:90%;}
+100%{width:95%;}
+}
+#csscoded{
+position:absolute;
+top:100px;
+left:0%;
+color:yellow;
+animation:csscoded 1s forwards;
+animation-iteration-count:1;
+animation-delay:8s;
+}
+@keyframes csscoded{
+0%{left:3%;}
+50%{left:7%;}
+100%{left:10%;}
+}
+#csscode{
+position:absolute;
+top:140px;
+left:5%;
+width:0%;
+height:20px;
+border:2px solid black;
+background-color:transparent;
+animation:csscode 3s forwards;
+animation-iteration-count:1;
+animation-delay:9s;
+}
+@keyframes csscode{
+0%{width:30%;}
+50%{width:50%;}
+100%{width:88%;}
+}
+#csscodeload{
+position:absolute;
+top:0;
+left:0;
+width:0%;
+height:20px;
+background-color:yellow;
+animation:cssload 1s forwards;
+animation-iteration-count:1;
+animation-delay:12s;
+}
+@keyframes cssload{
+0%{width:0%;}
+10%{width:10%;}
+20%{width:20%;}
+30%{width:30%;}
+40%{width:40%;}
+50%{width:50%;}
+60%{width:60%;}
+70%{width:70%;}
+80%{width:80%;}
+100%{width:90%;}
+}
+#javascoded{
+position:absolute;
+top:150px;
+left:0%;
+color:red;
+animation:javascoded 1s forwards;
+animation-iteration-count:1;
+animation-delay:15s;
+}
+@keyframes javascoded{
+0%{left:3%;}
+50%{left:7%;}
+100%{left:10%;}
+}
+#javascode{
+position:absolute;
+top:190px;
+left:5%;
+width:0%;
+height:20px;
+border:2px solid black;
+background-color:transparent;
+animation:javascode 3s forwards;
+animation-iteration-count:1;
+animation-delay:16s;
+}
+@keyframes javascode{
+0%{width:30%;}
+50%{width:50%;}
+100%{width:88%;}
+}
+#javascodeload{
+position:absolute;
+top:0;
+left:0;
+width:0%;
+height:20px;
+background-color:red;
+animation:javasload 1s forwards;
+animation-iteration-count:1;
+animation-delay:19s;
+}
+@keyframes javasload{
+0%{width:0%;}
+10%{width:10%;}
+20%{width:20%;}
+30%{width:30%;}
+40%{width:40%;}
+50%{width:50%;}
+60%{width:60%;}
+70%{width:70%;}
+80%{width:80%;}
+100%{width:80%;}
+}
+#pythoncoded{
+position:absolute;
+top:200px;
+left:0%;
+color:blue;
+animation:pythoncoded 1s forwards;
+animation-iteration-count:1;
+animation-delay:22s;
+}
+@keyframes pythoncoded{
+0%{left:3%;}
+50%{left:7%;}
+100%{left:10%;}
+}
+#pythoncode{
+position:absolute;
+top:240px;
+left:5%;
+width:0%;
+height:20px;
+border:2px solid black;
+background-color:transparent;
+animation:pythoncode 3s forwards;
+animation-iteration-count:1;
+animation-delay:23s;
+}
+@keyframes pythoncode{
+0%{width:30%;}
+50%{width:50%;}
+100%{width:88%;}
+}
+#pythoncodeload{
+position:absolute;
+top:0;
+left:0;
+width:0%;
+height:20px;
+background-color:blue;
+animation:pythonload 1s forwards;
+animation-iteration-count:1;
+animation-delay:26s;
+}
+@keyframes pythonload{
+0%{width:0%;}
+10%{width:10%;}
+20%{width:20%;}
+30%{width:30%;}
+40%{width:40%;}
+50%{width:50%;}
+60%{width:60%;}
+70%{width:70%;}
+80%{width:80%;}
+100%{width:85%;}
+}
+#myfreelance{
+position:absolute;
+top:670px;
+left:0.75%;
+width:98%;
+height:400px;
+border-radius:5%;
+border:2px solid blue;
+background-color:white;
+}
+#myfreelance img{
+position:absolute;
+top:0px;
+left:0%;
+width:100%;
+height:250px;
+border-radius:5%;
+backgroundcolor:white;
+}
+#myfreelance h4{
+position:absolute;
+top:240px;
+color:blue;
+left:28%;
+}
+#myfreelance h6{
+position:absolute;
+top:255px;
+left:5%;
+}
+#myfreelancebutton{
+position:absolute;
+top:330px;
+left:20%;
+width:60%;
+height:40px;
+color:white;
+background-color:#454545;
+box-shadow:0px -3px 10px 12px yellow inset;
+}
+#storebox{
+position:absolute;
+top:1100px;
+left:0;
+width:100%;
+height:300px;
+background-color:white;
+background:linear-gradient(to top left, red 0%, blue 30%, black 50%, blue 70%, red 90%);
+}
+#storebox h5{
+text-align:center;
+position:relative;
+top:10px;
+font-size:30px;
+color:yellow;
+}
+.paint1{
+position:absolute;
+top:130px;
+left:25%;
+width:50%;
+height:100px;
+border-radius:50%;
+background-color:white;
+box-shadow:
+   1px 1px 0px 4px yellow inset,
+   11px 9px 0px 4px blue inset,
+   21px 17px 0px 4px orange inset,
+   31px 25px 0px 4px black inset,
+   41px 33px 0px 4px  #D2691E inset,
+   51px 41px 0px 4px #228B22 inset,
+   61px 49px 0px 30px yellow inset,
+   100px 100px 0px 20px red inset
+;
+animation:design 3s infinite;
+animation-delay:0s;
+}
+@keyframes design{
+10%{box-shadow:
+   1px 1px 0px 4px red inset,
+   11px 9px 0px 4px yellow inset,
+   21px 17px 0px 4px blue inset,
+   31px 25px 0px 4px orange inset,
+   41px 33px 0px 4px  black inset,
+   51px 41px 0px 4px  #D2691E inset,
+   61px 49px 0px 30px #228B22 inset,
+   100px 100px 0px 20px yellow inset
+;}
+20%{box-shadow:
+   1px 1px 0px 4px yellow inset,
+   11px 9px 0px 4px red inset,
+   21px 17px 0px 4px yellow inset,
+   31px 25px 0px 4px blue inset,
+   41px 33px 0px 4px orange inset,
+   51px 41px 0px 4px black inset,
+   61px 49px 0px 30px #D2691E inset,
+   100px 100px 0px 20px #228B22 inset}
+30%{box-shadow:
+   1px 1px 0px 4px #228B22 inset,
+   11px 9px 0px 4px yellow inset,
+   21px 17px 0px 4px red inset,
+   31px 25px 0px 4px yellow inset,
+   41px 33px 0px 4px blue inset,
+   51px 41px 0px 4px orange inset,
+   61px 49px 0px 30px black inset,
+   100px 100px 0px 20px #D2691E inset}
+40%{box-shadow:
+   1px 1px 0px 4px #D2691E inset,
+   11px 9px 0px 4px #228B22 inset,
+   21px 17px 0px 4px yellow inset,
+   31px 25px 0px 4px red inset,
+   41px 33px 0px 4px yellow inset,
+   51px 41px 0px 4px blue inset,
+   61px 49px 0px 30px orange inset,
+   100px 100px 0px 20px black inset}
+50%{box-shadow:
+   1px 1px 0px 4px black inset,
+   11px 9px 0px 4px #D2691E inset,
+   21px 17px 0px 4px #228B22 inset,
+   31px 25px 0px 4px yellow inset,
+   41px 33px 0px 4px red inset,
+   51px 41px 0px 4px yellow inset,
+   61px 49px 0px 30px blue inset,
+   100px 100px 0px 20px orange inset}
+60%{box-shadow:
+   1px 1px 0px 4px orange inset,
+   11px 9px 0px 4px black inset,
+   21px 17px 0px 4px #D2691E inset,
+   31px 25px 0px 4px #228B22 inset,
+   41px 33px 0px 4px yellow inset,
+   51px 41px 0px 4px red inset,
+   61px 49px 0px 30px yellow inset,
+   100px 100px 0px 20px blue inset}
+70%{box-shadow:
+   1px 1px 0px 4px blue inset,
+   11px 9px 0px 4px orange inset,
+   21px 17px 0px 4px black inset,
+   31px 25px 0px 4px #D2691E inset,
+   41px 33px 0px 4px #228B22 inset,
+   51px 41px 0px 4px yellow inset,
+   61px 49px 0px 30px red inset,
+   100px 100px 0px 20px yellow inset}
+80%{box-shadow:
+   1px 1px 0px 4px yellow inset,
+   11px 9px 0px 4px blue inset,
+   21px 17px 0px 4px orange inset,
+   31px 25px 0px 4px black inset,
+   41px 33px 0px 4px #D2691E inset,
+   51px 41px 0px 4px #228B22 inset,
+   61px 49px 0px 30px yellow inset,
+   100px 100px 0px 20px red inset}
+100%{box-shadow:
+   1px 1px 0px 4px red inset,
+   11px 9px 0px 4px yellow inset,
+   21px 17px 0px 4px blue inset,
+   31px 25px 0px 4px orange inset,
+   41px 33px 0px 4px  black inset,
+   51px 41px 0px 4px  #D2691E inset,
+   61px 49px 0px 30px #228B22 inset,
+   100px 100px 0px 20px yellow inset
+;}
+}
+#storebox1{
+position:absolute;
+top:1430px;
+left:0;
+width:100%;
+height:260%;
+background-color:yellow;
+}
+#storebox1 h4{
+text-align:center;
+position:relative;
+top:20px;
+}
+#storebox1 img{
+position:relative;
+top:0%;
+left:0;
+width:100%;
+height:16%;
+}
+#storebox2{
+position:absolute;
+top:489%;
+left:0;
+width:100%;
+height:40%;
+background-color:grey;
+}
+#storebox2 #a1{
+position:absolute;
+top:5%;
+left:10%;
+}
+#storebox2 #a2{
+position:absolute;
+top:17%;
+left:10%;
+}
+#storebox2 #a3{
+position:absolute;
+top:29%;
+left:10%;
+}
+#storebox2 #a4{
+position:absolute;
+top:41%;
+left:10%;
+}
+#storebox2 #a5{
+position:absolute;
+top:54%;
+left:10%;
+}
+#storebox2 h3{
+position:absolute;
+top:62%;
+left:10%;
+background:linear-gradient(90deg,purple,violet,blue,cyan,lime,yellow,orange,red);
+
+-webkit-text-fill-color:transparent;
+-webkit-background-clip:text;
+}
+#storebox2 #copyright{
+position:absolute;
+top:80%;
+left:10%;
+}
+#storebox2 #rightreserve{
+position:absolute;
+top:80%;
+left:50%;
+}
+#up{
+position:fixed;
+top:87%;
+left:80%;
+width:12%;
+height:7%;
+background-color:black;
+border-radius:50%;
+border:2px solid blue;
+display:none;
+opacity:0.50;
+}
+#up1{
+position:relative;
+top:50%;
+left:20%;
+width:40%;
+height:10%;
+background-color:white;
+transform:rotate(315deg);
+}
+#up2{
+position:relative;
+top:40%;
+left:45%;
+width:40%;
+height:10%;
+background-color:white;
+transform:rotate(45deg);
+}
+#aboutmenav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:white;
+display:none;
+}
+#aboutmecancel{
+position:fixed;
+top:5%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#aboutmecancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#aboutmecancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+#aboutmenav h5{
+position:relative;
+text-align:center;
+top:15%;
+}
+#helpandsupportnav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:white;
+display:none;
+}
+#helpandsupportcancel{
+position:fixed;
+top:5%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#helpandsupportcancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#helpandsupportcancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+#helpandsupportnav h5{
+position:relative;
+text-align:center;
+top:15%;
+}
+#hiremebutton{
+position:absolute;
+top:50%;
+left:25%;
+width:50%;
+height:5%;
+border-radius:10%;
+background-color:green;
+border-bottom:5px solid #006400;
+border-right:5px solid #006400;
+}
+#hiremebuttonglare{
+position:relative;
+top:-70%;
+width:100%;
+height:100%;
+border-radius:10%;
+background-color:white;
+opacity:0.2;
+}
+#hiremebuttonglare h5{
+text-align:center;
+position:relative;
+top:35%;
+}
+#hiremebuttonglare2{
+position:absolute;
+top:15%;
+left:4%;
+width:5%;
+height:18%;
+border-radius:45%;
+background-color:white;
+transform:rotate(320deg);
+}
+#contactmenav{
+position:fixed;
+top:20%;
+left:0;
+width:100%;
+height:50%;
+background-color:white;
+display:none;
+}
+#contactmecancel{
+position:fixed;
+top:25%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#contactmecancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#contactmecancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+#contactmenav h5{
+position:relative;
+text-align:center;
+top:15%;
+}
+#myfacebook{
+position:absolute;
+top:45%;
+left:10%;
+width:20%;
+height:20%;
+border-radius:50%;
+}
+#myinstagram{
+position:absolute;
+top:45%;
+left:33%;
+width:20%;
+height:20%;
+border-radius:50%;
+}
+#mywhatsapp{
+position:absolute;
+top:45%;
+left:55%;
+width:20%;
+height:20%;
+border-radius:50%;
+}
+#mytelegram{
+position:absolute;
+top:45%;
+left:78%;
+width:20%;
+height:20%;
+border-radius:50%;
+}
+#menunav{
+position:fixed;
+top:0%;
+left:0;
+width:100%;
+height:100%;
+background-color:white;
+display:none;
+}
+#menucancel{
+position:fixed;
+top:10%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#menucancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#menucancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+#menunav h5{
+position:relative;
+text-align:center;
+top:30%;
+}
+#menunav #messageme1{
+position:fixed;
+top:50%;
+left:25%;
+border:2px solid blue;
+}
+#messageme{
+position:fixed;
+top:57%;
+left:25%;
+height:30%;
+width:50%;
+border:2px solid blue;
+background-color:lightblue;
+}
+#menunav button{
+position:fixed;
+top:90%;
+left:45%;
+background-color:pink;
+}
+#menunav h6{
+position:fixed;
+top:92%;
+left:25%;
+background:linear-gradient(90deg,purple,violet,blue,cyan,lime,yellow,orange,red);
+
+-webkit-text-fill-color:transparent;
+-webkit-background-clip:text;
+}
+#sign{
+display:none;
+}
+#signupcover{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+#signupnav{
+position:fixed;
+top:25%;
+left:13%;
+width:75%;
+height:300px;
+border:2px solid black;
+background-color:transparent;
+}
+#signupnav h2{
+position:relative;
+text-align:center;
+color:blue;
+}
+.fn{
+position:absolute;
+top:20%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.fn:focus{
+border:2px solid blue;
+background-color:white;
+}
+.sn{
+position:absolute;
+top:35%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.sn:focus{
+border:2px solid blue;
+background-color:white;
+}
+.pn{
+position:absolute;
+top:50%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.pn:focus{
+border:2px solid blue;
+background-color:white;
+}
+.rpn{
+position:absolute;
+top:65%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.rpn:focus{
+border:2px solid blue;
+background-color:white;
+}
+#formreader{
+position:absolute;
+top:65%;
+left:35%;
+width:7%;
+height:6%;
+border-radius:50%;
+background-color:green;
+}
+#formreader1{
+position:absolute;
+top:65%;
+left:45%;
+width:7%;
+height:6%;
+border-radius:50%;
+background-color:#90ee90;
+}
+#formreader2{
+position:absolute;
+top:65%;
+left:55%;
+width:7%;
+height:6%;
+border-radius:50%;
+background-color:#90ee90;
+}
+#submitsign{
+position:absolute;
+top:85%;
+left:57%;
+width:30%;
+height:10%;
+background-color:yellow;
+}
+#submitsign1{
+position:absolute;
+top:80%;
+left:10%;
+width:30%;
+height:10%;
+background-color:yellow;
+display:none;
+}
+#signcancel{
+position:fixed;
+top:10%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#signcancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#signcancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+#log{
+display:none;
+}
+#logcover{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+#lognav{
+position:fixed;
+top:25%;
+left:13%;
+width:75%;
+height:300px;
+border:2px solid black;
+background-color:transparent;
+}
+#lognav h2{
+position:relative;
+text-align:center;
+color:blue;
+}
+.snt{
+position:absolute;
+top:35%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.snt:focus{
+border:2px solid blue;
+background-color:white;
+}
+.pnt{
+position:absolute;
+top:50%;
+left:4%;
+height:10%;
+width:92%;
+color:black;
+border:2px solid yellow;
+background-color:transparent;
+}
+.pnt:focus{
+border:2px solid blue;
+background-color:white;
+}
+#submitlog{
+position:absolute;
+top:85%;
+left:57%;
+width:30%;
+height:10%;
+background-color:yellow;
+}
+#logcancel{
+position:fixed;
+top:10%;
+left:85%;
+width:10%;
+height:5.5%;
+border-radius:50%;
+background-color:red;
+}
+#logcancelline1{
+position:relative;
+top:45%;
+left:30%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(45deg);
+}
+#logcancelline2{
+position:relative;
+top:33%;
+left:28%;
+width:45%;
+height:10%;
+background-color:white;
+border-radius:20%;
+transform:rotate(315deg);
+}
+</style>
+    </head>
+    <body>
+    <div id ="storebox2">
+    <a id ="a1">Home</a>
+    <a id ="a2">Services</a>
+    <a id ="a3">Help</a>
+    <a id ="a4">Contact Me</a>
+    <a id ="a5">Menu</a>
+    <h3>DEVELOPED BY:Pes Star (Peter)</h3>
+    <h5 id="copyright">©Copyright 2023</h5>
+    <h5 id ="rightreserve">All right reserved</h5>
+    </div>
+    <div id ="storebox1">
+    <h4>my certificate</h4>
+    <h4>html:</h4>
+    <img src="https://gcdnb.pbrd.co/images/U5Uvp7e8vl8E.png?o=1">
+    <img src="https://gcdnb.pbrd.co/images/6SaBIQ9czQUD.jpg?o=1">
+    <h4>css:</h4>
+    <img src="https://gcdnb.pbrd.co/images/Z30oqZRvvZGg.jpg?o=1">
+    <h4>JavaScript:</h4>
+    <img src="https://gcdnb.pbrd.co/images/ZVQO2Fd7vGBD.jpg?o=1">
+    <img src="https://gcdnb.pbrd.co/images/kxumNrOZTXR2.jpg?o=1">
+    <h4>i finished all this COURSE in SOLOLEARN and PROGRAMMINGHUB </h4>
+    </div>
+    <div id ="storebox">
+    <h5>Designing</h5>
+    <div class ="paint1"></div>
+        </div>
+    <div id ="myfreelance">
+    <img src ="https://cdn.stocksnap.io/img-thumbs/280h/programming-code_1STVFMTBJY.jpg">
+    <h4>WEB DEVELOPMENT:</h4>
+    <h6>I am a experienced website developer skilled in HTML, CSS, JavaScript, and various CMS platforms. If you want your website to be develop, Click.</h6>
+    <button id ="myfreelancebutton">my freelance profile</button>
+    </div>
+    <div id ="myskill">
+    <h5 id ="myskilld">Myskill:</h5>
+    <h5 id ="htmlcoded">HTML:95%</h5>
+    <div id ="htmlcode">
+    <div id ="htmlcodeload"></div>
+   </div>
+    <h5 id ="csscoded">CSS:90%</h5>
+    <div id ="csscode">
+    <div id ="csscodeload"></div>
+   </div>
+   <h5 id ="javascoded">JavaScript:80%</h5>
+    <div id ="javascode">
+    <div id ="javascodeload"></div>
+   </div>
+   <h5 id ="pythoncoded">python:85%</h5>
+    <div id ="pythoncode">
+    <div id ="pythoncodeload"></div>
+ </div>
+    </div>
+    <div id ="myskillbutton"><div id ="glare"></div><h5>Check out my skills</h5><div id ="myskilllogo"></div></div>
+    <div id ="mydescription"><h5>Description:<br /> 
+    As a website developer and designer, I am passionate about crafting visually appealing and functional websites, combining creativity, coding skills, and user-centric design to deliver impactful online experiences.
+    </h5></div>
+    <body>
+    <div id ="descrip">
+    <img id = "imgdescrip" src ="https://gcdnb.pbrd.co/images/G8MGtAMJo9sV.jpg?o=1">
+    <h1 class ="description">Hi, Am Peter<h1 class ="description1">Website developer and designer</h1></h1>
+    </div>
+    <div id ="logobackground">
+    <img id ="weblogo" src ="https://freepngimg.com/download/logo/71766-logo-vector-design-illustration-phoenix-hd-image-free-png.png">
+    <div id ="personal">
+    <div class ="personalhead"></div>
+    <div class ="personalbody"></div>
+    </div>
+    <nav id = "nav">
+    <ul id ="homeid">< Home</ul>
+    <ul id ="aboutid">< About me</ul>
+    <ul id ="menuid" onclick="menu()">< Menu</ul>
+    </nav>
+    <div id ="navicon">
+    <div id ="line1"></div>
+    <div id ="line2"></div>
+    <div id ="line3"></div>
+    </div>
+    </div>
+    <div id ="personalfunc">
+    <button class ="signup" onclick="signup()">+ Sign up</button>
+    <button class ="login" onclick="login()">+ Log in</button>
+    </div>
+    <div id ="up">
+    <div id ="up1"></div>
+    <div id ="up2"></div>
+    </div>
+    <div id ="aboutmenav">
+    <div id ="aboutmecancel">
+    <div id ="aboutmecancelline1"></div>
+    <div id ="aboutmecancelline2"></div>
+    </div>
+    <h5>About me:</h5>
+    <h5>I am a passionate and experienced web development and designer with a strong background in creating aesthetically pleasing and functional websites. With over 5 years of experience in the industry, I have honed my skills in front-end development, UI/UX design, and content management systems.
+
+As a web developer, I have a deep understanding of HTML, CSS, and JavaScript, which allows me to create visually appealing and responsive websites. I am also familiar with popular frameworks like Bootstrap and WordPress, which help me in developing websites efficiently and effectively. I am well-versed in implementing SEO best practices and ensuring that websites are optimized for search engines.
+
+In addition to my technical skills, I have a keen eye for design and a strong understanding of user experience. I pay meticulous attention to detail and strive to create visually stunning websites that deliver an exceptional user experience. I am proficient in Adobe Photoshop and Illustrator, allowing me to create custom graphics and designs for websites.
+
+I am a highly organized and detail-oriented individual who is committed to delivering projects on time and exceeding client expectations. I am an excellent communicator and collaborator, making it easy for me to work with clients and understand their needs.
+
+Overall, I am a versatile and skilled web developer and designer who is committed to creating attractive and functional websites that leave a lasting impression on users.</h5>
+    </div>
+    <div id ="helpandsupportnav">
+    <div id ="helpandsupportcancel">
+    <div id ="helpandsupportcancelline1"></div>
+    <div id ="helpandsupportcancelline2"></div>
+    </div>
+    <h5>Help and support</h5>
+    <h5>If you are looking for a web developer and designer am a active web developer and designer and it will take just 3 days for your web to be build</h5>
+    <h5>To hire me click the button below</h5>
+    <div id ="hiremebutton">
+    <div id ="hiremebuttonglare"><h5>hire me</h5></div>
+    <div id ="hiremebuttonglare2"></div>
+    </div>
+    </div>
+    <div id ="contactmenav">
+    <div id ="contactmecancel">
+    <div id ="contactmecancelline1"></div>
+    <div id ="contactmecancelline2"></div>
+    </div>
+    <h5>Contact me:</h5>
+    <img id = "myfacebook" src ="https://gcdnb.pbrd.co/images/CRuGDNKalPjt.jpg?o=1">
+    <img id ="myinstagram" src="https://gcdnb.pbrd.co/images/DjwAXQLJXCOo.jpg?o=1">
+    <img id ="mywhatsapp" src="https://gcdnb.pbrd.co/images/6wjOIXsYRsXr.jpg?o=1">
+    <img id ="mytelegram" src="https://gcdnb.pbrd.co/images/bBUhAO0pM3HI.jpg?o=1">
+    </div>
+    <div id ="menunav">
+    <div id ="menucancel">
+    <div id ="menucancelline1"></div>
+    <div id ="menucancelline2"></div>
+    </div>
+    <h5>Account</h5>
+    <h5>Message me directly:</h5>
+    <form>
+    <input id ="messageme1"type ="text" placeholder="Name">
+    <textarea id ="messageme" type ="text" placeholder="Your text..."></textarea>
+    <button>send</button>
+    <h6>For fast message: Contact me through "bosco4real2017@gmail.com"</h6>
+    </form>
+    </div>
+    <div id="sign">
+    <form>
+    <img id ="signupcover" src="https://gcdnb.pbrd.co/images/B3KUOHThFZNU.jpg?o=1">
+    <div id ="signcancel">
+    <div id ="signcancelline1"></div>
+    <div id ="signcancelline2"></div>
+    </div>
+    <div id ="signupnav">
+    <h2>Sign up:</h2>
+    <input class="fn" type="text" placeholder="Full name" required>
+    <input class="sn" type="email" placeholder="Email" required>
+    <input class="pn" type="password" placeholder="Password" required>
+    <input class="rpn" type="password" placeholder="Re-password" required>
+    <input id="submitsign" type="submit" value="Sign up &gt">
+    </div>
+    </form>
+    </div>
+    <div id="log">
+    <form>
+    <img id ="logcover" src="https://gcdnb.pbrd.co/images/B3KUOHThFZNU.jpg?o=1">
+    <div id ="logcancel">
+    <div id ="logcancelline1"></div>
+    <div id ="logcancelline2"></div>
+    </div>
+    <div id ="lognav">
+    <h2>Log in:</h2>
+    <input class="snt" type="email" placeholder="Email" required>
+    <input class="pnt" type="password" placeholder="Password" required>
+    <input id="submitlog" type="submit" value="Log in &gt">
+    </div>
+    </form>
+    </div>
+    
+    
+    
+    <script>
+    var personal = document.getElementById("personal");
+    var personalClickCount = 0;
+    var personalfunc = document.getElementById("personalfunc");
+    function firstPersonal(){
+    personalfunc.style.display = "initial";
+    }
+    function secondPersonal(){
+    personalfunc.style.display = "none";
+    } personal.addEventListener("click",function(){
+    personalClickCount++;
+    if (personalClickCount == 1){
+    firstPersonal();
+    }
+    if (personalClickCount == 2){
+    secondPersonal()
+    personalClickCount = 0;
+    }
+    })
+    var navicon = document.getElementById("navicon");
+    var lineone = document.getElementById("line1");
+    var linetwo = document.getElementById("line2");
+    var linethree = document.getElementById("line3");
+    var nav = document.getElementById("nav")
+    var naviconClickCount = 0;
+    function firstnavicon(){
+    lineone.style.animation ="move 1s forwards";
+    linetwo.style.display = "none"
+    linethree.style.animation ="down 1s forwards";
+    nav.style.display ="initial"
+    nav.style.animation ="change 1s forwards";
+    }
+    function secondnavicon(){
+    lineone.style.animation ="none";
+    linetwo.style.display ="initial";
+    linethree.style.animation ="none";
+    nav.style.animation ="changeversa 1s forwards";
+    nav.style.display ="none";
+    }
+    navicon.addEventListener("click",function(){
+    naviconClickCount++;
+    if (naviconClickCount == 1){
+    firstnavicon();
+    }
+    if (naviconClickCount == 2){
+    secondnavicon();
+    naviconClickCount = 0;
+    }
+    })
+    var up = document.getElementById("up");
+    up.addEventListener("click", function(){
+    window.scrollTo(0, 0);
+    })
+       window.addEventListener('scroll', function() {
+  var scrollAmount = window.pageYOffset;
+  if (scrollAmount > 100) {
+   logobackground.style.height = "53px";
+   up.style.display ="initial";
+  }
+  else{
+   logobackground.style.height = "100px";
+   up.style.display ="none";
+  }
+});
+ var myskillbutton = document.getElementById("myskillbutton");
+ var myskill = document.getElementById("myskill");
+ var myfreelance = document.getElementById("myfreelance")
+ var myskilllogo = document.getElementById("myskilllogo");
+ var glare = document.getElementById("glare")
+ function firstmyskillbutton(){
+    myskillbutton.style.border ="1px solid red";
+    myskilllogo.style.transform ="rotate(0deg)";
+    glare.style.height ="17px";
+    myskill.style.display ="initial";
+    window.scrollTo(0, 500);
+    myfreelance.style.top = "980px";
+    storebox.style.top ="1400px";
+    storebox1.style.top ="1730px";
+    storebox2.style.top ="537%"
+    setTimeout(function(){
+    glare.style.height ="20px";
+    myskillbutton.style.border ="3px solid black";
+    }, 1500);
+ }
+ function secondmyskillbutton(){
+    myskillbutton.style.border ="1px solid red";
+    myskilllogo.style.transform ="rotate(180deg)";
+    glare.style.height ="17px";
+    myskill.style.display ="none";
+    myfreelance.style.top = "670px";
+    storebox.style.top ="1100px";
+    storebox1.style.top ="1430px";
+    storebox2.style.top ="489%";
+    setTimeout(function(){
+    glare.style.height ="20px";
+    myskillbutton.style.border ="3px solid black";
+    }, 1500);
+ }
+ myskillbuttonClickCount = 0;
+ myskillbutton.addEventListener("click", function(){
+    myskillbuttonClickCount++;
+    if (myskillbuttonClickCount == 1){
+    firstmyskillbutton();
+    }
+    if (myskillbuttonClickCount == 2){
+    secondmyskillbutton();
+    myskillbuttonClickCount = 0;
+    }
+ })
+ var homeid = document.getElementById("homeid");
+ homeid.addEventListener("click", function(){
+   homeid.style.backgroundColor = "lightblue";
+   setTimeout(function(){
+    homeid.style.backgroundColor = "transparent";
+    window.scrollTo(0, 0);
+    nav.style.display = "none";
+    lineone.style.animation ="none";
+    linetwo.style.display ="initial";
+    linethree.style.animation ="none";
+    }, 1000)
+ })
+ var a1 = document.getElementById("a1");
+ a1.addEventListener("click", function(){
+    a1.style.backgroundColor = "lightblue";
+   setTimeout(function(){
+    a1.style.backgroundColor = "transparent";
+    window.scrollTo(0, 0);
+    }, 1000)
+ })
+ var aboutid = document.getElementById("aboutid");
+ var aboutmenav = document.getElementById("aboutmenav");
+ var aboutmecancel = document.getElementById("aboutmecancel");
+ aboutmecancel.addEventListener("click", function(){
+ aboutmecancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    aboutmenav.style.display = "none";
+    nav.style.display = "none";
+    lineone.style.animation ="none";
+    linetwo.style.display ="initial";
+    linethree.style.animation ="none";
+    aboutmecancel.style.border ="transparent";
+    }, 1000)
+ })
+ var a2 = document.getElementById("a2");
+ a2.addEventListener("click", function(){
+    a2.style.backgroundColor ="lightblue";
+    setTimeout(function(){
+    aboutmenav.style.display ="initial";
+    a2.style.backgroundColor ="transparent";
+    }, 1000)
+ })
+ aboutid.addEventListener("click", function(){
+   aboutid.style.backgroundColor = "lightblue";
+   setTimeout(function(){
+   aboutmenav.style.display ="initial";
+   aboutid.style.backgroundColor = "transparent";
+   }, 1000)
+   });
+   var helpandsupportnav = document.getElementById("helpandsupportnav");
+   var a3 = document.getElementById("a3");
+   a3.addEventListener("click", function(){
+    a3.style.backgroundColor ="lightblue";
+    setTimeout(function(){
+    
+    a3.style.backgroundColor ="transparent";
+    helpandsupportnav.style.display ="initial";
+    }, 1000)
+ })
+ var hiremebutton = document.getElementById("hiremebutton");
+    hiremebutton.addEventListener("click", function(){
+    hiremebutton.style.borderBottom ="3px solid #006400";
+    hiremebutton.style.borderRight ="3px solid #006400";
+    setTimeout(function(){
+    hiremebutton.style.borderBottom ="5px solid #006400";
+    hiremebutton.style.borderRight ="5px solid #006400";
+    window.location.href ="https://www.upwork.com/freelancers/~01e492189c786347be";
+    }, 500)
+    })
+     var helpandsupportcancel = document.getElementById("helpandsupportcancel");
+ helpandsupportcancel.addEventListener("click", function(){
+ helpandsupportcancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    helpandsupportnav.style.display = "none";
+    helpandsupportcancel.style.border ="transparent";
+    }, 1000)
+ })
+ var myfreelancebutton = document.getElementById("myfreelancebutton");
+ myfreelancebutton.addEventListener("click", function(){
+    window.location.href ="https://www.upwork.com/freelancers/~01e492189c786347be";
+ })
+ var contactmenav = document.getElementById("contactmenav")
+ var a4 = document.getElementById("a4");
+ a4.addEventListener("click", function(){
+    a4.style.backgroundColor ="lightblue";
+    setTimeout(function(){
+    a4.style.backgroundColor ="transparent";
+    contactmenav.style.display ="initial";
+    }, 1000)
+ })
+ var contactmecancel = document.getElementById("contactmecancel");
+ contactmecancel.addEventListener("click", function(){
+ contactmecancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    contactmenav.style.display = "none";
+    contactmecancel.style.border ="transparent";
+    }, 1000)
+ })
+ var myinstagram = document.getElementById("myinstagram")
+ myinstagram.addEventListener("click", function(){
+    window.location.href ="https://www.instagram.com/pesstar4real/";
+ })
+ var myfacebook = document.getElementById("myfacebook")
+ myfacebook.addEventListener("click", function(){
+    window.location.href ="https://www.facebook.com/peter.obikoya.5";
+ })
+ var mywhatsapp = document.getElementById("mywhatsapp")
+ mywhatsapp.addEventListener("click", function(){
+    window.location.href ="https://wa.me/+2347033308990";
+ })
+ var mytelegram = document.getElementById("mytelegram")
+ mytelegram.addEventListener("click", function(){
+    window.location.href ="https://t.me/+2347033308990";
+ })
+ var menunav = document.getElementById("menunav")
+ var a5 = document.getElementById("a5");
+ a5.addEventListener("click", function(){
+    a5.style.backgroundColor ="lightblue";
+    setTimeout(function(){
+    a5.style.backgroundColor ="transparent";
+    menunav.style.display ="initial";
+    }, 1000)
+ })
+ var menucancel = document.getElementById("menucancel");
+ menucancel.addEventListener("click", function(){
+ menucancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    menunav.style.display = "none";
+    menucancel.style.border ="transparent";
+    }, 1000)
+ })
+ var sign = document.getElementById("sign")
+ function signup(){
+ setTimeout(function(){
+    sign.style.display ="initial";
+    }, 1000)
+ }
+ var signcancel = document.getElementById("signcancel");
+ signcancel.addEventListener("click", function(){
+ signcancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    sign.style.display = "none";
+    menucancel.style.border ="transparent";
+    }, 1000)
+ })
+ var menuid = document.getElementById("menuid")
+ function menu(){
+    menuid.style.backgroundColor ="lightblue";
+    setTimeout(function(){
+    menuid.style.backgroundColor ="transparent";
+    menunav.style.display ="initial";
+    nav.style.display = "none";
+    lineone.style.animation ="none";
+    linetwo.style.display ="initial";
+    linethree.style.animation ="none";
+    }, 1000)
+ }
+ var log = document.getElementById("log");
+  function login(){
+    setTimeout(function(){
+    log.style.display ="initial";
+    }, 1000)
+  }
+  var logcancel = document.getElementById("logcancel");
+ logcancel.addEventListener("click", function(){
+ logcancel.style.border ="2px solid blue";
+    setTimeout(function(){
+    log.style.display = "none";
+    logcancel.style.border ="transparent";
+    }, 1000)
+ })
+    </script>    
+    </body>
+</html>
