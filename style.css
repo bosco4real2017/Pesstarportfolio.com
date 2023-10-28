@@ -1299,19 +1299,19 @@ body {
             }
             #line2{
             position:fixed;
-            top:25px;
+            top:35px;
             left:83%;
             width:12%;
-            height:5px;
+            height:15px;
             border-radius:20%;
             background-color:red;
             }
             #line3{
             position:fixed;
-            top:35px;
+            top:45px;
             left:85%;
             width:10%;
-            height:5px;
+            height:15px;
             border-radius:20%;
             background-color:red;
             animation-iteration-count:1;
