@@ -39,10 +39,9 @@ body {
  
  @media (min-width: 600px) {
    #logobackground {
-     background-color: green;
-     height: 200px;
-     left: 5%;
-     width: 90%;
+     background-color: #000080;
+     height: 170px;
+     width: 100%;
    }
  }
  
