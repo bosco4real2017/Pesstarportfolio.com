@@ -1317,6 +1317,31 @@ body {
             animation-iteration-count:1;
             animation-fill-mode:down;
             }
+            #imgdescrip{
+               position:relative;
+               top:0px;
+               left:0px;
+               width:100%;
+               height:278px;
+               }
+               .description{
+               position:absolute;
+               top:30px;
+               left:20%;
+               font-style:italic;
+               font-size:30px;
+               color:#fffff0;
+               text-shadow:0px 10px 10px blue;
+               }
+               .description1{
+               position:absolute;
+               top:150px;
+               left:35%;
+               font-size:40px;
+               font-style:italic;
+               color:#fffff0;
+               text-shadow:0px 10px 10px blue;
+               }
             #mydescription{
                position:absolute;
                top:430px;
