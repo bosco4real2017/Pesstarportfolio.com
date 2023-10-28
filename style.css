@@ -1238,7 +1238,7 @@ body {
     border-radius:20%;
     transform:rotate(315deg);
     }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       #logobackground {
         background-color: greenyellow;
         height: 170px;
