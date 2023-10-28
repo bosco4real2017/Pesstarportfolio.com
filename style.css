@@ -37,13 +37,6 @@ body {
    background-color: transparent;
  }
  
- @media (min-width: 600px) {
-   #logobackground {
-     background-color: #000080;
-     height: 170px;
-     width: 100%;
-   }
- }
  
     .personalbody{
     position:fixed;
@@ -1244,4 +1237,11 @@ body {
     background-color:white;
     border-radius:20%;
     transform:rotate(315deg);
+    }
+    @media (min-width: 600px) {
+      #logobackground {
+        background-color: #000080;
+        height: 170px;
+        width: 100%;
+      }
     }
