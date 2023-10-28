@@ -1285,7 +1285,7 @@ body {
           }
           #line1{
             position:fixed;
-            top:25px;
+            top:45px;
             left:85%;
             width:10%;
             height:15px;
@@ -1299,7 +1299,7 @@ body {
             }
             #line2{
             position:fixed;
-            top:45px;
+            top:65px;
             left:83%;
             width:12%;
             height:15px;
@@ -1308,7 +1308,7 @@ body {
             }
             #line3{
             position:fixed;
-            top: 65px;
+            top: 85px;
             left:85%;
             width:10%;
             height:15px;
