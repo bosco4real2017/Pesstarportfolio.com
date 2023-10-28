@@ -40,6 +40,9 @@ body {
  @media (min-width: 600px) {
    #logobackground {
      background-color: green;
+     height: 200px;
+     left: 10%;
+     width: 90%;
    }
  }
  
