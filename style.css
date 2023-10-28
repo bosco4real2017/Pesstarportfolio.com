@@ -1240,7 +1240,7 @@ body {
     }
     @media (min-width: 600px) {
       #logobackground {
-        background-color: #000080;
+        background-color: greenyellow;
         height: 170px;
         width: 100%;
       }
