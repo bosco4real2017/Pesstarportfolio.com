@@ -1244,4 +1244,8 @@ body {
         height: 170px;
         width: 100%;
       }
+      #weblogo {
+         width: 20%;
+         height: 150px; 
+       }
     }
