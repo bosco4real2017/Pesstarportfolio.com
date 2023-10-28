@@ -1233,5 +1233,13 @@ body {
     transform:rotate(315deg);
     }
     @media only screen and (min-width: 600px) {
-       
+       logobackground{
+         position:fixed;
+       top:0;
+      left:0;
+      width:100%;
+      height: 200px;
+      background-color:#000080;
+    }
+
     }
