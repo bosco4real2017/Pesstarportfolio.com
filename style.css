@@ -1334,7 +1334,7 @@ body {
                }
                .description{
                position:absolute;
-               top:200px;
+               top:300px;
                left:20%;
                font-style:italic;
                font-size:30px;
@@ -1343,7 +1343,7 @@ body {
                }
                .description1{
                position:absolute;
-               top:240px;
+               top:340px;
                left:35%;
                font-size:40px;
                font-style:italic;
