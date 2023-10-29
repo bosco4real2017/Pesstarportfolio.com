@@ -179,33 +179,39 @@ Overall, I am a versatile and skilled web developer and designer who is committe
     </form>
     </div>
     <script>
-    var personal = document.getElementById("personal");
-    var personalClickCount = 0;
-    var personalfunc = document.getElementById("personalfunc");
-    function firstPersonal(){
-    personalfunc.style.display = "initial";
-    }
-    function secondPersonal(){
-    personalfunc.style.display = "none";
-    } personal.addEventListener("click",function(){
-    personalClickCount++;
-    if (personalClickCount == 1){
+    const personal = document.getElementById("personal");
+let personalClickCount = 0;
+const personalfunc = document.getElementById("personalfunc");
+
+function firstPersonal(){
+  personalfunc.style.display = "initial";
+}
+
+function secondPersonal(){
+  personalfunc.style.display = "none"; 
+}
+
+personal.addEventListener("click", function(){
+  personalClickCount++;
+  if (personalClickCount === 1){
     firstPersonal();
-    }
-    if (personalClickCount == 2){
-    secondPersonal()
+  }
+  if (personalClickCount === 2){
+    secondPersonal();
     personalClickCount = 0;
-    }
-    })
-    var navicon = document.getElementById("navicon");
-    var lineone = document.getElementById("line1");
-    var linetwo = document.getElementById("line2");
-    var linethree = document.getElementById("line3");
-    var nav = document.getElementById("nav")
-    var naviconClickCount = 0;
-    function firstnavicon(){
-    lineone.style.animation ="move 1s forwards";
-    linetwo.style.display = "none"
+  }
+});
+
+const navicon = document.getElementById("navicon");
+const lineone = document.getElementById("line1");
+const linetwo = document.getElementById("line2"); 
+const linethree = document.getElementById("line3");
+const nav = document.getElementById("nav");
+let naviconClickCount = 0;
+
+function firstnavicon(){
+  lineone.style.animation = "move 1s forwards";
+  linetwo.style.display = "none";
     linethree.style.animation ="down 1s forwards";
     nav.style.display ="initial"
     nav.style.animation ="change 1s forwards";
