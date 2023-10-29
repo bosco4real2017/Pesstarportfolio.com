@@ -1444,8 +1444,28 @@ body {
                         #storebox h5{
                         text-align:center;
                         position:relative;
-                        top:10px;
+                        top:100px;
                         font-size:30px;
                         color:yellow;
                         }
-    }
+                           .paint1{
+                           position:absolute;
+                           top:230px;
+                           left:25%;
+                           width:50%;
+                           height:100px;
+                           border-radius:50%;
+                           background-color:white;
+                           box-shadow:
+                              1px 1px 0px 4px yellow inset,
+                              11px 9px 0px 4px blue inset,
+                              21px 17px 0px 4px orange inset,
+                              31px 25px 0px 4px black inset,
+                              41px 33px 0px 4px  #D2691E inset,
+                              51px 41px 0px 4px #228B22 inset,
+                              61px 49px 0px 30px yellow inset,
+                              100px 100px 0px 20px red inset
+                           ;
+                           animation:design 3s infinite;
+                           animation-delay:0s;
+                           }
