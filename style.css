@@ -1353,7 +1353,7 @@ body {
             #mydescription{
                position:absolute;
                top:825px;
-               left:0;
+               left:1%;
                width:98%;
                height:200px;
                border:3px solid red;
